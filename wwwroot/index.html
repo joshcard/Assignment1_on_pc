@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Joshua Card's Page</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="icon" href="img/guitarIcon.png" />
+</head>
+<body>
+    <!--My prefered name, picture of me playing guitar, and a paragraph about what I hope to learn.-->
+    <h1>Josh Card</h1>
+    <img src="img/guitar.jpg" />
+    <p>
+        I hope to really understand ASP.NET MVC Core. I want to be able to go into a workplace and feel confident in my abilities,
+        as well as be able to talk about the subject in an interview. I would also like to better understand git and github,
+        seeing as working on a team is almost always the situation I will find myself in while in industry.
+    </p>
+
+    <!--List of top three jobs I would like out of college-->
+    <h3>Top Three Jobs:</h3>
+    <ul>
+        <li>Web/software development</li>
+        <li>Security</li>
+        <li>Database design and management</li>
+    </ul>
+
+    <!--
+        grade calculator. This form receives the total percentage for each section. 
+        The maximum percentage possible for each section is 100%. the weight of each section is calculated automatically.
+    -->
+    <h3>Grade Calculator</h3>
+    <p>Please input the percentage earned for each area (Do NOT include the % sign). </p>
+    <p><i>note: up to 100% is possible for each section. the weights of each section will be automatically calculated.</i></p>
+    <form>
+        <label>Assignments:</label>
+        <input class="box" id="assignments" />%
+        <br />
+        <label>Group Project:</label>
+        <input class="box" id="groupProject" />%
+        <br />
+        <label>Quizzes:</label>
+        <input class="box" id="quizzes" />%
+        <br />
+        <label>Exams:</label>
+        <input class="box" id="exams" />%
+        <br />
+        <label>INTEX:</label>
+        <input class="box" id="intex" />%
+        <br />
+        <input type="submit" value="Submit" id="submitButton" />
+    </form>
+
+    <script src="js/gradeCalculator.js"></script>
+</body>
+</html>
