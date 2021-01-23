@@ -1,15 +1,12 @@
-﻿//Create variable grade that is connected to the grade calculation form
-var grade = document.getElementById("submitButton");
-
+﻿$("#submitButton").click( function () {
 //when the submit button on the form is clicked then this function will be called. 
 //The function adds up the percentages given and applies the weight of each percentage, 
 //then determines what letter grade to award and displays the info in an alert box.
-grade.addEventListener("click", function () {
-    var score = ((parseInt(document.getElementById("assignments").value) * .5) +
-        (parseInt(document.getElementById("groupProject").value) * .1) +
-        (parseInt(document.getElementById("quizzes").value) * .1) +
-        (parseInt(document.getElementById("exams").value) * .2) +
-        (parseInt(document.getElementById("intex").value) * .1));
+    var score = ((parseInt($("assignments").value) * .5) +
+        (parseInt($("groupProject").value) * .1) +
+        (parseInt($("quizzes").value) * .1) +
+        (parseInt($("exams").value) * .2) +
+        (parseInt($("intex").value) * .1));
 
     if (score >= 94) {
         alert(score + " which is an A");
