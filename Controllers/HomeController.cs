@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Assignment1.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,17 @@ namespace Assignment1.Controllers
         {
             return View();
         }
-
+        
+        //When there is a get request the following is executed
+        [HttpGet("GradeCalculator")]
         public IActionResult GradeCalculator ()
+        {
+            return View();
+        }
+
+        //When there is a post request the following is executed
+        [HttpPost("GradeCalculator")]
+        public IActionResult GradeCalculator (GradeCalculatorModel model)
         {
             return View();
         }

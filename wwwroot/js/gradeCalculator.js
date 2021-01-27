@@ -2,11 +2,11 @@
 //when the submit button on the form is clicked then this function will be called. 
 //The function adds up the percentages given and applies the weight of each percentage, 
 //then determines what letter grade to award and displays the info in an alert box.
-    var score = ((parseInt($("assignments").value) * .5) +
-        (parseInt($("groupProject").value) * .1) +
-        (parseInt($("quizzes").value) * .1) +
-        (parseInt($("exams").value) * .2) +
-        (parseInt($("intex").value) * .1));
+    var score = ((parseInt($("#assignments").val(), 10) * .5) +
+        (parseInt($("#groupProject").val(), 10) * .1) +
+        (parseInt($("#quizzes").val(), 10) * .1) +
+        (parseInt($("#exams").val(), 10) * .2) +
+        (parseInt($("#intex").val(), 10) * .1));
 
     if (score >= 94) {
         alert(score + " which is an A");

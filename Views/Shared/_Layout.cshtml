@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<!--This is the _Layout view that will be inherited by other views.-->
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -19,8 +21,10 @@
         <img src="~/img/guitar.jpg" />
     </header>
 
+    <!--This is where the body for other pages will go. -->
     @RenderBody()
 
+    <!--Footer and script that will be accessible on any page that inherites from this view-->
     <footer>This be me!</footer>
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="~/js/gradeCalculator.js"></script>
